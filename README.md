@@ -1,5 +1,7 @@
 # TicTac
 
+[Demo](https://616023491bc79417ac38bea7--brave-lamport-e15f32.netlify.app)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
 ## Development server
