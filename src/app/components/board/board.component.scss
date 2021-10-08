@@ -1,0 +1,42 @@
+  .board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
+    &-header{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    &-body {
+      height: 100%;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &-content {
+        width: 60vw;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    &-cell {
+      height: 20vh;
+      width: 20vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-footer {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }

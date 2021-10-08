@@ -1,0 +1,27 @@
+<div class="board" [ngClass]="{'bg-danger': isDraw, 'bg-success': isWon}">
+  <header class="board-header py-3 justify-content-space-around">
+    <div class="btn btn-lg" [ngClass]="{'btn-success': activePlayer === 'X'}"> Player - X </div>
+    <div class="d-flex justify-content-center item-align-center">
+      <h3 class="text-success mb-0" *ngIf="isWon">
+        Congratulations {{ activePlayer }}. You won the Game!
+      </h3>
+      <h3 class="text-danger mb-0" *ngIf="isDraw">
+        Oops, Game is Draw.
+      </h3>
+    </div>
+    <div class="btn btn-lg" [ngClass]="{'btn-success': activePlayer === 'O'}">Player - O</div>
+  </header>
+
+  <div class="board-body" ticDrawGrid>
+    <div class="board-body-content">
+      <div *ngFor="let item of [0,1,2,3,4,5,6,7,8]" class="board-cell">
+        <board-cell [cellIndex]="item" (onCellClicked)="handleCellClick(item)"></board-cell>
+      </div>
+    </div>
+  </div>
+
+  <footer class="board-footer py-3">
+    <button class="btn btn-primary btn-lg" (click)="reset()">Reset</button>
+  </footer>
+
+</div>

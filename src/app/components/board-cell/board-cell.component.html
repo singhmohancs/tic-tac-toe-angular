@@ -1,0 +1,6 @@
+<button class="cell-btn"
+        [class.disabled]="!canAttempt"
+        (click)="handleClick()"
+        [disabled]="!canAttempt">
+  {{ text }}
+</button>
