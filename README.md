@@ -17,4 +17,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 
 ## Screenshots
-![plot](./src/asstes/screen-board.png)
+![plot](https://616023491bc79417ac38bea7--brave-lamport-e15f32.netlify.app/assets/screen-board.png)
